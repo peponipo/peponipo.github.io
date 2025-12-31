@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Healthcare Ransomware Attack: A Critical Failure</title>
+    <title>Change Healthcare: Elite Threat Intelligence Analysis</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -37,7 +38,6 @@
             position: relative;
         }
 
-        /* Animated Background Grid Effect */
         body::before {
             content: '';
             position: fixed;
@@ -54,7 +54,6 @@
             animation: gridPulse 4s ease-in-out infinite;
         }
 
-        /* Scanline effect */
         body::after {
             content: '';
             position: fixed;
@@ -62,10 +61,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(
-                transparent 50%, 
-                rgba(0, 245, 255, 0.03) 50%
-            );
+            background: linear-gradient(transparent 50%, rgba(0, 245, 255, 0.03) 50%);
             background-size: 100% 4px;
             pointer-events: none;
             z-index: 0;
@@ -90,7 +86,6 @@
             z-index: 1;
         }
 
-        /* Navigation */
         .nav {
             position: fixed;
             top: 20px;
@@ -137,7 +132,6 @@
             transform: translateY(-2px);
         }
 
-        /* Slide Navigation Controls */
         .slide-nav {
             position: fixed;
             bottom: 40px;
@@ -227,7 +221,6 @@
             text-shadow: 0 0 10px var(--glow-red);
         }
 
-        /* Slide Container */
         .slide {
             min-height: 100vh;
             padding: 60px 40px;
@@ -274,7 +267,6 @@
             }
         }
 
-        /* Slide Number */
         .slide-number {
             position: absolute;
             top: 20px;
@@ -285,7 +277,6 @@
             opacity: 0.5;
         }
 
-        /* Title Slide */
         .title-slide {
             display: flex;
             flex-direction: column;
@@ -343,24 +334,27 @@
             top: 70px;
         }
 
-        .alert-banner {
+.alert-banner {
             position: absolute;
             top: 50%;
-            left: -50px;
+            left: -60px; /* Pushed back more */
             transform: rotate(-45deg);
             background: linear-gradient(90deg, var(--accent-red), #ff4466);
             color: white;
-            padding: 15px 100px;
+            padding: 14px 90px; /* Reduced from 15px 100px */
             font-family: 'JetBrains Mono', monospace;
-            font-size: 16px;
+            font-size: 15px; /* Slightly smaller */
             font-weight: bold;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
+            line-height: 1.6; /* Better spacing for multi-line */
+            text-align: center;
             box-shadow: 
                 0 5px 30px var(--glow-red),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3);
             animation: alertPulse 2s ease-in-out infinite;
             z-index: 5;
         }
+
 
         @keyframes alertPulse {
             0%, 100% { box-shadow: 0 5px 30px var(--glow-red), inset 0 1px 0 rgba(255, 255, 255, 0.3); }
@@ -421,7 +415,6 @@
             color: var(--accent-cyan);
         }
 
-        /* Section Slides */
         h2 {
             font-size: 52px;
             font-weight: 700;
@@ -470,7 +463,6 @@
             line-height: 1.8;
         }
 
-        /* Stats Grid */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -570,7 +562,6 @@
                 0 0 40px var(--glow-red);
         }
 
-        /* Timeline */
         .timeline {
             position: relative;
             padding-left: 50px;
@@ -638,7 +629,6 @@
             text-shadow: 0 0 10px var(--glow-red);
         }
 
-        /* Impact List */
         .impact-list {
             margin: 30px 0;
         }
@@ -696,7 +686,6 @@
             opacity: 1;
         }
 
-        /* Technical Diagram */
         .tech-diagram {
             background: rgba(139, 92, 246, 0.05);
             border: 2px solid var(--accent-purple);
@@ -764,7 +753,7 @@
             border: 2px solid var(--accent-red);
             padding: 40px;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 20px;
+            font-size: 18px;
             color: var(--accent-cyan);
             margin: 25px 0;
             overflow-x: auto;
@@ -804,7 +793,6 @@
             100% { transform: translateX(100%); }
         }
 
-        /* Quote Box */
         .quote-box {
             background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(255, 8, 68, 0.1) 100%);
             border-left: 5px solid var(--warning);
@@ -839,7 +827,6 @@
             font-family: 'JetBrains Mono', monospace;
         }
 
-        /* Comparison Table */
         .comparison-table {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -875,7 +862,6 @@
             color: var(--accent-cyan);
         }
 
-        /* Vulnerability Factors */
         .factor-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -907,7 +893,6 @@
             margin-bottom: 15px;
         }
 
-        /* Recommendations */
         .recommendation-section {
             margin: 40px 0;
         }
@@ -945,7 +930,6 @@
             margin-right: 10px;
         }
 
-        /* Warning Box */
         .warning-box {
             background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(255, 8, 68, 0.1) 100%);
             border: 3px solid var(--warning);
@@ -987,7 +971,6 @@
             border: 2px solid rgba(0, 0, 0, 0.2);
         }
 
-        /* Key Takeaways */
         .takeaway-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1013,7 +996,6 @@
             opacity: 0.3;
         }
 
-        /* Final Slide */
         .final-slide {
             text-align: center;
             background: linear-gradient(135deg, #1a0a1a 0%, var(--bg-card) 100%);
@@ -1027,7 +1009,6 @@
             line-height: 1.6;
         }
 
-        /* References */
         .references {
             background: rgba(0, 0, 0, 0.3);
             padding: 30px;
@@ -1057,7 +1038,6 @@
             border-bottom: none;
         }
 
-        /* Scroll Progress */
         .scroll-progress {
             position: fixed;
             top: 0;
@@ -1083,7 +1063,6 @@
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
         }
 
-        /* Animations */
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
@@ -1093,7 +1072,6 @@
             animation: pulse 2s infinite;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             h1 { font-size: 42px; }
             h2 { font-size: 36px; }
@@ -1116,13 +1094,12 @@
         <button class="nav-btn" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">↓ End</button>
     </div>
 
-    <!-- Slide Navigation Controls -->
     <div class="slide-nav" id="slideNav">
         <button class="slide-nav-btn" id="prevBtn" onclick="navigateSlide(-1)">
             <span>←</span>
         </button>
         <div class="slide-counter">
-            <span class="current" id="currentSlide">01</span> / <span id="totalSlides">17</span>
+            <span class="current" id="currentSlide">01</span> / <span id="totalSlides">20</span>
         </div>
         <button class="slide-nav-btn" id="nextBtn" onclick="navigateSlide(1)">
             <span>→</span>
@@ -1131,23 +1108,30 @@
 
     <div class="container">
         
-        <!-- Slide 1: Title -->
+<!-- Slide 1: Title -->
         <section class="slide title-slide">
             <div class="cve-badge">CVE-2024-1709</div>
             <div class="cve-badge cve-badge-secondary">CVE-2024-1708</div>
-            <div class="alert-banner">LARGEST HEALTH BREACH</div>
+    <div class="alert-banner">
+        ELITE APT-LEVEL ANALYSIS<br>
+        CRITICAL INCIDENT<br>
+        LARGEST HEALTH BREACH EVER
+    </div>
+
+
             <h1>Change Healthcare<br>Ransomware Attack</h1>
-            <p class="subtitle">A Critical Failure in Healthcare Cybersecurity</p>
+            <p class="subtitle">Elite Threat Intelligence & Geopolitical Analysis</p>
             <div class="presenter-info">
                 <strong>Presenter:</strong> [Dev0]<br>
                 <strong>Incident Date:</strong> February 2024<br>
-                <strong>CVE:</strong> CVE-2024-1709, CVE-2024-1708
+                <strong>Threat Actor:</strong> ALPHV/BlackCat (Russian-affiliated APT)<br>
+                <strong>CVE:</strong> CVE-2024-1709 (CVSS 10.0), CVE-2024-1708
             </div>
         </section>
 
         <!-- Slide 2: Company Overview -->
         <section class="slide">
-            <span class="slide-number">02 / 17</span>
+            <span class="slide-number">02 / 20</span>
             <h2>Change Healthcare: The Invisible Backbone</h2>
             
             <div class="stats-grid">
@@ -1165,7 +1149,7 @@
                 </div>
             </div>
 
-            <p>Change Healthcare operates as the invisible backbone of the U.S. healthcare system, processing approximately 15 billion healthcare transactions annually; roughly one-third of all American patient records flowing through their systems every single year.</p>
+            <p>Change Healthcare operates as the invisible backbone of the U.S. healthcare system, processing approximately 15 billion healthcare transactions annually—roughly one-third of all American patient records flowing through their systems every single year.</p>
 
             <h3>Core Services</h3>
             <div class="impact-list">
@@ -1186,13 +1170,13 @@
 
         <!-- Slide 3: Attack Timeline -->
         <section class="slide">
-            <span class="slide-number">03 / 17</span>
+            <span class="slide-number">03 / 20</span>
             <h2>Timeline of the Attack</h2>
             
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-date">February 12-17, 2024</div>
-                    <p><strong>Initial Breach:</strong> Attackers gain access using stolen credentials to Citrix portal. <strong>9 DAYS of undetected reconnaissance</strong> - mapping networks, identifying high-value targets.</p>
+                    <p><strong>Initial Breach:</strong> Attackers gain access using stolen credentials to Citrix portal. <strong>9 DAYS of undetected reconnaissance</strong>—mapping networks, identifying high-value targets.</p>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">February 21, 2024</div>
@@ -1219,7 +1203,7 @@
 
         <!-- Slide 4: Impact Visualization -->
         <section class="slide">
-            <span class="slide-number">04 / 17</span>
+            <span class="slide-number">04 / 20</span>
             <h2>Immediate Consequences</h2>
             
             <div class="warning-box">
@@ -1271,10 +1255,10 @@
             </div>
         </section>
 
-        <!-- Slide 5: Authentication Failure -->
+        <!-- Slide 5: Authentication Failure with APT Tradecraft -->
         <section class="slide">
-            <span class="slide-number">05 / 17</span>
-            <h2>The Vulnerability: A Simple Failure</h2>
+            <span class="slide-number">05 / 20</span>
+            <h2>The Vulnerability: APT-Level Exploitation</h2>
             
             <div class="tech-diagram">
                 <div class="vulnerability-box">
@@ -1282,7 +1266,7 @@
                     <p style="font-size: 22px; margin-top: 20px;">A Citrix remote access portal processing one-third of American healthcare data was protected by ONLY a username and password.</p>
                 </div>
 
-                <h3 style="margin-top: 30px;">Attack Vector</h3>
+                <h3 style="margin-top: 30px;">APT-Level Attack Vector (MITRE ATT&CK)</h3>
         <div style="
             background: linear-gradient(135deg, #0d0d15 0%, #1a0a1a 100%);
             border: 2px solid var(--accent-red);
@@ -1293,6 +1277,7 @@
             box-shadow: 0 0 30px var(--glow-red);
         ">
             <pre style="font-size: 20px; line-height: 1.8; margin: 0; color: var(--accent-cyan);">
+// Summary
 // Compromised Credentials
 username: healthcare_admin@changehc.com
 password: ****************
@@ -1307,16 +1292,58 @@ CVE-2024-1708 (Path Traversal)
 // 40-year-old legacy software
 
 // Result: FULL NETWORK ACCESS
-// 9 days undetected reconnaissance !</pre>
-        </div>
+// 9 days undetected reconnaissance !
 
-                <p style="margin-top: 30px; font-size: 22px; line-height: 1.8; color: var(--text-primary);">The attackers exploited CVE-2024-1709, a ConnectWise ScreenConnect authentication bypass vulnerability with a perfect CVSS score of 10.0. They used compromised credentials to access Change Healthcare's Citrix remote portal. This critical gateway, handling the medical records of 192.7 million Americans, had <strong style="color: var(--accent-red);">NO multi-factor authentication enabled</strong>.</p>
+---
+
+DETAILS:
+
+// INITIAL ACCESS (T1078, T1190)
+Compromised Credentials: healthcare_admin@changehc.com
+Exploit Chain: CVE-2024-1709 (CVSS 10.0) + CVE-2024-1708
+Entry Point: Citrix Remote Access Portal
+
+// APT-LEVEL TRADECRAFT
+MFA Status: DISABLED ❌ (catastrophic failure)
+Network Segmentation: MINIMAL (flat network topology)
+EDR/XDR Detection: NONE (9 days undetected)
+SIEM Monitoring: INADEQUATE (no behavioral analytics)
+
+// RECONNAISSANCE (T1046, T1083, T1087)
+Duration: 9 days of "living off the land"
+Techniques: Native Windows tools (no malware dropped)
+Targets: Active Directory, backup systems, crown jewels
+Legacy Systems: 40-year-old software identified
+
+// LATERAL MOVEMENT (T1021, T1570)
+Protocol Abuse: RDP, WMI, PsExec
+Credential Dumping: Likely via Mimikatz or similar
+Privilege Escalation: Domain Admin achieved
+
+// DATA EXFILTRATION (T1048)
+Volume: 6 TB protected health information
+Exfil Method: TOR C2 channels (encrypted traffic)
+Detection: NONE (no data loss prevention)
+
+// IMPACT (T1486, T1490)
+Ransomware: ALPHV/BlackCat (Rust-based)
+Encryption: ChaCha20 + RSA-4096 (unbreakable)
+Backup Destruction: Shadow copies deleted
+Recovery Time Objective: FAILED (weeks of downtime)
+
+// This is APT-level operational security
+// This is why attribution matters
+// This is why MFA isn't optional
+
+
+</pre>
+        </div>
             </div>
         </section>
 
         <!-- Slide 6: CEO Testimony -->
         <section class="slide">
-            <span class="slide-number">06 / 17</span>
+            <span class="slide-number">06 / 20</span>
             <h2>Congressional Testimony</h2>
             
             <div class="quote-box">
@@ -1345,9 +1372,63 @@ CVE-2024-1708 (Path Traversal)
             </p>
         </section>
 
-        <!-- Slide 7: Security Comparison -->
+        <!-- NEW SLIDE 7: Geopolitical Context & Snowden -->
         <section class="slide">
-            <span class="slide-number">07 / 17</span>
+            <span class="slide-number">07 / 20</span>
+            <h2>The Geopolitical Dimension</h2>
+            
+            <div class="quote-box">
+                "When you're attacking critical infrastructure, you're not just stealing data; you're testing resilience, mapping dependencies, and demonstrating asymmetric warfare capabilities."
+                <cite>— Threat intelligence analysis</cite>
+            <div class="quote-box">
+                "Security is a process, not a product."
+                <cite>— Bruce Schneier, Internationally renowned security expert</cite>
+            </div>
+
+            <h3>Why Healthcare is a Strategic Target</h3>
+            <div class="impact-list">
+                <div class="impact-item">
+                    <strong>Critical Infrastructure Mapping:</strong> Attacks like this reveal dependencies in U.S. healthcare—which systems are brittle, how disruption cascades, how long recovery takes. This intelligence is valuable to nation-state adversaries.
+                </div>
+                <div class="impact-item">
+                    <strong>Ransomware as Cover:</strong> Financial motivation provides plausible deniability. Was this pure crime, or did nation-state actors use criminal infrastructure for espionage? 6TB of medical records has intelligence value beyond resale.
+                </div>
+                <div class="impact-item">
+                    <strong>Russia-Linked Operations:</strong> ALPHV/BlackCat operates with apparent immunity in Russia. Like other ransomware groups (DarkSide, REvil), they avoid Russian targets—suggesting tacit state approval or coordination.
+                </div>
+            </div>
+
+            <div class="tech-diagram" style="margin-top: 30px;">
+                <h3>The Snowden Revelations Echo</h3>
+                <p>Edward Snowden revealed how intelligence agencies exploit software vulnerabilities for surveillance. The Change Healthcare breach shows the civilian cost when security isn't prioritized:</p>
+                <div class="comparison-table" style="margin-top: 20px;">
+                    <div class="comparison-column healthcare">
+                        <h4>Intelligence Community Lesson</h4>
+                        <p><strong>Snowden (2013):</strong> NSA stockpiled zero-days instead of disclosing them</p>
+                        <p><strong>Result:</strong> When EternalBlue leaked, it powered WannaCry ransomware</p>
+                        <p><strong>Victims:</strong> UK's NHS, FedEx, Renault—critical services paralyzed</p>
+                    </div>
+                    <div class="comparison-column banking">
+                        <h4>Change Healthcare Lesson</h4>
+                        <p><strong>CVE-2024-1709:</strong> Known critical vulnerability, patch available</p>
+                        <p><strong>Result:</strong> Unpatched system with no MFA became entry point</p>
+                        <p><strong>Victims:</strong> 192.7M Americans, weeks of healthcare disruption</p>
+                    </div>
+                </div>
+                <p style="margin-top: 20px; text-align: center; color: var(--accent-red); font-size: 20px;">
+                    <strong>When security is deprioritized—whether by intelligence agencies hoarding vulnerabilities or corporations skipping basic controls—civilians pay the price.</strong>
+                </p>
+            </div>
+
+            <div class="warning-box" style="margin-top: 40px;">
+                <h3>Asymmetric Warfare in Peacetime</h3>
+                <p>Ransomware attacks on critical infrastructure serve multiple purposes: immediate profit, intelligence gathering, and demonstrating the fragility of adversary systems. In a conflict scenario, actors who've already mapped healthcare dependencies know exactly where to strike.</p>
+            </div>
+        </section>
+
+        <!-- Slide 8: Security Comparison -->
+        <section class="slide">
+            <span class="slide-number">08 / 20</span>
             <h2>Healthcare vs. Banking Security</h2>
             
             <div class="comparison-table">
@@ -1381,9 +1462,9 @@ CVE-2024-1708 (Path Traversal)
             </div>
         </section>
 
-        <!-- Slide 8: Attack Chain -->
+        <!-- Slide 9: Attack Chain -->
         <section class="slide">
-            <span class="slide-number">08 / 17</span>
+            <span class="slide-number">09 / 20</span>
             <h2>Attack Chain Visualization</h2>
             
             <div class="timeline">
@@ -1430,9 +1511,160 @@ CVE-2024-1708 (Path Traversal)
             </div>
         </section>
 
-        <!-- Slide 9: The Ransom -->
+        <!-- NEW SLIDE 10: APT Threat Actor Deep Dive -->
         <section class="slide">
-            <span class="slide-number">09 / 17</span>
+            <span class="slide-number">10 / 20</span>
+            <h2>Threat Actor: ALPHV/BlackCat Deep Dive</h2>
+            
+            <div class="tech-diagram">
+                <h3>APT-Level Sophistication</h3>
+                <p>ALPHV/BlackCat represents a new generation of ransomware-as-a-service (RaaS) operators with nation-state-level capabilities:</p>
+            </div>
+
+            <div class="factor-grid">
+                <div class="factor-card">
+                    <span class="factor-number">🇷🇺</span>
+                    <div class="factor-title">Russian-Affiliated APT</div>
+                    <p>Believed to be former members of DarkSide/BlackMatter (Colonial Pipeline attackers). After law enforcement pressure, they rebranded with upgraded tooling.</p>
+                </div>
+
+                <div class="factor-card">
+                    <span class="factor-number">🔧</span>
+                    <div class="factor-title">Written in Rust</div>
+                    <p>First ransomware written in Rust language—makes detection harder. Cross-platform (Windows, Linux, VMware ESXi). Evades traditional signature-based defenses.</p>
+                </div>
+
+                <div class="factor-card">
+                    <span class="factor-number">💰</span>
+                    <div class="factor-title">RaaS Business Model</div>
+                    <p>Ransomware-as-a-Service: ALPHV provides infrastructure, encryption tools, negotiation support. Affiliates conduct attacks. 80/20 revenue split.</p>
+                </div>
+
+                <div class="factor-card">
+                    <span class="factor-number">🎯</span>
+                    <div class="factor-title">Triple Extortion</div>
+                    <p>Beyond double-extortion: (1) Encrypt systems, (2) Steal data, (3) DDoS attacks during negotiation. Pressure from multiple angles simultaneously.</p>
+                </div>
+            </div>
+
+            <div class="warning-box" style="margin-top: 40px;">
+                <h3>The Exit Scam</h3>
+                <p>After receiving the $22M payment, ALPHV/BlackCat performed an "exit scam"—disappearing with the money and leaving their affiliate (who conducted the actual attack) unpaid. This prompted the affiliate to regroup as RansomHub and threaten data release anyway.</p>
+                <p style="margin-top: 15px; color: var(--accent-red);"><strong>This demonstrates the criminal underworld's lack of honor among thieves and why paying ransoms is futile.</strong></p>
+            </div>
+
+<div style="
+    background: linear-gradient(135deg, #0d0d15 0%, #1a0a1a 100%);
+    border: 2px solid var(--accent-red);
+    padding: 40px;
+    margin: 30px 0;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-cyan);
+    box-shadow: 0 0 30px var(--glow-red);
+    position: relative;
+">
+    <div style="
+        position: absolute;
+        top: -12px;
+        left: 20px;
+        background: var(--accent-red);
+        color: white;
+        padding: 3px 12px;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: 700;
+    ">[ THREAT ACTOR PROFILE ]</div>
+    <pre style="font-size: 20px; line-height: 1.8; margin: 0; color: var(--accent-cyan);">
+// ALPHV/BlackCat Technical Indicators
+Language: Rust (cross-platform compilation)
+Encryption: ChaCha20 + RSA-4096
+Target OS: Windows, Linux, ESXi
+Lateral Movement: PsExec, WMI, RDP
+Persistence: Registry, Scheduled Tasks
+C2 Communications: Tor hidden services
+
+// Known TTPs (MITRE ATT&CK)
+T1486 - Data Encrypted for Impact
+T1490 - Inhibit System Recovery
+T1027 - Obfuscated Files or Information
+T1071 - Application Layer Protocol (Tor)
+</pre>
+</div>
+</section>
+
+        <!-- NEW SLIDE 11: Nation-State Attack Parallels -->
+        <section class="slide">
+            <span class="slide-number">11 / 20</span>
+            <h2>Lessons from APT & Nation-State Campaigns</h2>
+            
+            <div class="tech-diagram">
+                <h3>The Evolution of Cyber Warfare</h3>
+                <p>Change Healthcare shares tactical DNA with major nation-state operations:</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">STUXNET (2010) - NSA/Unit 8200</div>
+                    <p><strong>Target:</strong> Iranian nuclear centrifuges. <strong>Lesson:</strong> Air-gapped systems aren't safe. Supply chain attacks work. Physical damage from cyber operations is real.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">SONY PICTURES (2014) - Lazarus Group/DPRK</div>
+                    <p><strong>Target:</strong> Sony Entertainment. <strong>Lesson:</strong> Data destruction + extortion + geopolitical messaging. Ransomware attacks can have political motivations disguised as crime.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">WANNACRY (2017) - Lazarus Group/DPRK</div>
+                    <p><strong>Target:</strong> 200,000+ systems globally, including UK's NHS. <strong>Lesson:</strong> NSA's leaked EternalBlue exploit became a weapon. Healthcare is vulnerable. Unpatched systems kill.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">NOTPETYA (2017) - Sandworm/GRU</div>
+                    <p><strong>Target:</strong> Ukraine, $10B+ global damage. <strong>Lesson:</strong> Supply chain attacks scale exponentially. MeDoc software update compromised. Maersk, FedEx, Merck devastated.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">SOLARWINDS (2020) - APT29/SVR</div>
+                    <p><strong>Target:</strong> U.S. government agencies, Fortune 500. <strong>Lesson:</strong> Software supply chain is the new attack surface. 18,000 organizations backdoored. Detection took 9+ months.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">COLONIAL PIPELINE (2021) - DarkSide</div>
+                    <p><strong>Target:</strong> U.S. fuel infrastructure. <strong>Lesson:</strong> One compromised VPN password. No MFA. Critical infrastructure ransomware causes national emergencies.</p>
+                </div>
+            </div>
+
+            <div class="warning-box" style="margin-top: 40px;">
+                <h3>Change Healthcare Fits the Pattern</h3>
+                <p style="font-size: 20px;">
+                    ✓ Critical infrastructure target (healthcare backbone)<br>
+                    ✓ No MFA on remote access (same failure as Colonial Pipeline)<br>
+                    ✓ Extended dwell time (9 days, similar to SolarWinds)<br>
+                    ✓ Russian-affiliated threat actor (ALPHV/BlackCat)<br>
+                    ✓ Double-extortion model (now standard APT tactic)<br>
+                    ✓ Catastrophic national impact (largest healthcare breach ever)
+                </p>
+            </div>
+
+            <div class="stats-grid" style="margin-top: 30px;">
+                <div class="stat-card red">
+                    <span class="stat-number">9 Days</span>
+                    <span class="stat-label">Dwell Time (APT Average: 24 days)</span>
+                </div>
+                <div class="stat-card red">
+                    <span class="stat-number">$2.457B</span>
+                    <span class="stat-label">Cost (NotPetya: $10B+)</span>
+                </div>
+                <div class="stat-card red">
+                    <span class="stat-number">192.7M</span>
+                    <span class="stat-label">Affected (SolarWinds: 18K orgs)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 12: The Ransom -->
+        <section class="slide">
+            <span class="slide-number">12 / 20</span>
             <h2>The Ransom Payment & Aftermath</h2>
             
             <div class="stats-grid">
@@ -1483,9 +1715,9 @@ CVE-2024-1708 (Path Traversal)
             </p>
         </section>
 
-        <!-- Slide 10: Healthcare Vulnerabilities -->
+        <!-- Slide 13: Healthcare Vulnerabilities -->
         <section class="slide">
-            <span class="slide-number">10 / 17</span>
+            <span class="slide-number">13 / 20</span>
             <h2>Why Healthcare Is Vulnerable</h2>
             
             <div class="stats-grid">
@@ -1509,7 +1741,7 @@ CVE-2024-1708 (Path Traversal)
                 <div class="factor-card">
                     <span class="factor-number">02</span>
                     <div class="factor-title">Legacy Systems</div>
-                    <p>Change Healthcare ran 40-year-old software. Many facilities still run Windows XP because medical devices can't be upgraded without FDA recertification; a process costing millions and taking years.</p>
+                    <p>Change Healthcare ran 40-year-old software. Many facilities still run Windows XP because medical devices can't be upgraded without FDA recertification—a process costing millions and taking years.</p>
                 </div>
 
                 <div class="factor-card">
@@ -1538,9 +1770,9 @@ CVE-2024-1708 (Path Traversal)
             </div>
         </section>
 
-        <!-- Slide 11: IoT Medical Devices -->
+        <!-- Slide 14: IoT Medical Devices -->
         <section class="slide">
-            <span class="slide-number">11 / 17</span>
+            <span class="slide-number">14 / 20</span>
             <h2>Internet of Medical Things (IoMT)</h2>
             
             <div class="tech-diagram">
@@ -1572,104 +1804,224 @@ CVE-2024-1708 (Path Traversal)
             <p style="margin-top: 30px;">Many IoMT devices ship with default credentials that are rarely changed. They lack firmware update mechanisms and run outdated software. When connected to hospital networks, they become entry points for attackers.</p>
         </section>
 
-        <!-- Slide 12: Prevention Framework -->
+        <!-- NEW SLIDE 15: Zero Trust Architecture -->
         <section class="slide">
-            <span class="slide-number">12 / 17</span>
-            <h2>Prevention Framework: Defense in Depth</h2>
+            <span class="slide-number">15 / 20</span>
+            <h2>Zero Trust Architecture: Defense Against APT</h2>
             
-            <div style="display: flex; justify-content: center; align-items: center; min-height: 70vh; margin: 20px 0;">
-                <svg width="100%" height="700" viewBox="0 0 1200 700" style="max-width: 100%;">
-                    <defs>
-                        <linearGradient id="grad-cyan" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:0.8" />
-                            <stop offset="100%" style="stop-color:#00f5ff;stop-opacity:0.3" />
-                        </linearGradient>
-                        <linearGradient id="grad-purple" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
-                            <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
-                        </linearGradient>
-                        <linearGradient id="grad-red" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:#ff3366;stop-opacity:0.8" />
-                            <stop offset="100%" style="stop-color:#ff3366;stop-opacity:0.3" />
-                        </linearGradient>
-                        <linearGradient id="grad-green" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0.8" />
-                            <stop offset="100%" style="stop-color:#00ff88;stop-opacity:0.3" />
-                        </linearGradient>
-                        <filter id="glow">
-                            <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
-                            <feMerge>
-                                <feMergeNode in="coloredBlur"/>
-                                <feMergeNode in="SourceGraphic"/>
-                            </feMerge>
-                        </filter>
-                    </defs>
-                    
-                    <line x1="600" y1="100" x2="200" y2="600" stroke="#00f5ff" stroke-width="1" opacity="0.2" stroke-dasharray="10,5"/>
-                    <line x1="600" y1="100" x2="1000" y2="600" stroke="#00f5ff" stroke-width="1" opacity="0.2" stroke-dasharray="10,5"/>
-                    <line x1="200" y1="600" x2="1000" y2="600" stroke="#00ff88" stroke-width="1" opacity="0.2" stroke-dasharray="10,5"/>
-                    
-                    <polygon points="600,100 1000,600 200,600" 
-                             fill="url(#grad-green)" 
-                             stroke="#00ff88" 
-                             stroke-width="5"
-                             filter="url(#glow)"/>
-                    
-                    <polygon points="600,100 875,475 325,475" 
-                             fill="url(#grad-red)" 
-                             stroke="#ff3366" 
-                             stroke-width="5"
-                             filter="url(#glow)"/>
-                    
-                    <polygon points="600,100 750,350 450,350" 
-                             fill="url(#grad-purple)" 
-                             stroke="#8b5cf6" 
-                             stroke-width="5"
-                             filter="url(#glow)"/>
-                    
-                    <polygon points="600,100 700,225 500,225" 
-                             fill="url(#grad-cyan)" 
-                             stroke="#00f5ff" 
-                             stroke-width="5"
-                             filter="url(#glow)"/>
-                    
-                    <circle cx="600" cy="100" r="15" fill="#00f5ff" stroke="#ffffff" stroke-width="3" filter="url(#glow)"/>
-                    <circle cx="200" cy="600" r="15" fill="#00ff88" stroke="#ffffff" stroke-width="3" filter="url(#glow)"/>
-                    <circle cx="1000" cy="600" r="15" fill="#00ff88" stroke="#ffffff" stroke-width="3" filter="url(#glow)"/>
-                    
-                    <rect x="490" y="140" width="220" height="50" fill="rgba(10, 10, 15, 0.95)" stroke="#00f5ff" stroke-width="2" rx="5"/>
-                    <text x="600" y="173" fill="#00f5ff" text-anchor="middle" font-size="20" font-family="JetBrains Mono" font-weight="bold">
-                        INCIDENT RESPONSE
-                    </text>
-                    
-                    <rect x="460" y="265" width="280" height="50" fill="rgba(10, 10, 15, 0.95)" stroke="#8b5cf6" stroke-width="2" rx="5"/>
-                    <text x="600" y="298" fill="#8b5cf6" text-anchor="middle" font-size="20" font-family="JetBrains Mono" font-weight="bold">
-                        MONITORING & AUDITING
-                    </text>
-                    
-                    <rect x="450" y="390" width="300" height="50" fill="rgba(10, 10, 15, 0.95)" stroke="#ff3366" stroke-width="2" rx="5"/>
-                    <text x="600" y="423" fill="#ff3366" text-anchor="middle" font-size="20" font-family="JetBrains Mono" font-weight="bold">
-                        NETWORK SEGMENTATION
-                    </text>
-                    
-                    <rect x="400" y="520" width="400" height="60" fill="rgba(10, 10, 15, 0.95)" stroke="#00ff88" stroke-width="3" rx="5"/>
-                    <text x="600" y="550" fill="#00ff88" text-anchor="middle" font-size="24" font-family="JetBrains Mono" font-weight="bold">
-                        MULTI-FACTOR AUTHENTICATION
-                    </text>
-                    <text x="600" y="570" fill="#a0a0b0" text-anchor="middle" font-size="14" font-family="JetBrains Mono">
-                        Foundation Layer
-                    </text>
-                </svg>
+            <div class="tech-diagram">
+                <h3>Why Traditional "Castle-and-Moat" Security Failed</h3>
+                <p>Change Healthcare operated on the assumption that the network perimeter was secure. Once attackers breached the Citrix portal, they had free reign. This is the failure of perimeter-based security.</p>
             </div>
-            
-            <p style="text-align: center; font-size: 20px; margin-top: 20px; line-height: 1.8; color: var(--text-primary);">
-                A comprehensive security strategy requires multiple layers of defense. Each level builds upon the foundation of strong authentication.
-            </p>
+
+            <div class="comparison-table">
+                <div class="comparison-column healthcare">
+                    <h4>❌ Traditional Model (Change Healthcare)</h4>
+                    <p><strong>Philosophy:</strong> "Trust but verify" inside the network</p>
+                    <p><strong>Perimeter:</strong> Strong (in theory)</p>
+                    <p><strong>Internal:</strong> Weak—flat network, implicit trust</p>
+                    <p><strong>Access:</strong> Credential = full access</p>
+                    <p><strong>Monitoring:</strong> Perimeter-focused, internal blind spots</p>
+                    <p><strong>Result:</strong> 9 days undetected after initial breach</p>
+                </div>
+
+                <div class="comparison-column banking">
+                    <h4>✅ Zero Trust Model</h4>
+                    <p><strong>Philosophy:</strong> "Never trust, always verify"</p>
+                    <p><strong>Perimeter:</strong> Assumes breach has already occurred</p>
+                    <p><strong>Internal:</strong> Micro-segmentation, no implicit trust</p>
+                    <p><strong>Access:</strong> Continuous authentication + authorization</p>
+                    <p><strong>Monitoring:</strong> Every transaction verified and logged</p>
+                    <p><strong>Result:</strong> Lateral movement blocked at each step</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">Zero Trust Principles (NIST SP 800-207)</h3>
+            <div class="impact-list">
+                <div class="impact-item">
+                    <strong>1. Verify Explicitly:</strong> Always authenticate and authorize based on all available data points (user identity, location, device health, service/workload, data classification, anomalies)
+                </div>
+                <div class="impact-item">
+                    <strong>2. Least Privilege Access:</strong> Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection
+                </div>
+                <div class="impact-item">
+                    <strong>3. Assume Breach:</strong> Minimize blast radius and segment access. Verify end-to-end encryption. Use analytics to get visibility, drive threat detection, and improve defenses
+                </div>
+            </div>
+
+<div style="
+    background: linear-gradient(135deg, #0d0d15 0%, #1a0a1a 100%);
+    border: 2px solid var(--accent-red);
+    padding: 40px;
+    margin: 30px 0;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-cyan);
+    box-shadow: 0 0 30px var(--glow-red);
+    position: relative;
+">
+    <div style="
+        position: absolute;
+        top: -12px;
+        left: 20px;
+        background: var(--accent-red);
+        color: white;
+        padding: 3px 12px;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: 700;
+    ">[ ZERO TRUST IMPLEMENTATION ]</div>
+    <pre style="font-size: 20px; line-height: 1.8; margin: 0; color: var(--accent-cyan);">
+// ZERO TRUST IMPLEMENTATION FOR HEALTHCARE
+Policy Engine: Deny by default
+Identity Verification: Continuous MFA (hardware tokens, biometrics)
+Device Posture: EDR agent health check before access
+Network Segmentation: Micro-perimeters around critical systems
+Encryption: TLS 1.3 everywhere, including internal traffic
+Monitoring: UEBA (User/Entity Behavior Analytics)
+
+// IF CHANGE HEALTHCARE HAD THIS:
+healthcare_admin@changehc.com attempts access:
+  ✓ MFA required: Hardware token + biometric
+  ✓ Device check: Is EDR agent running? Patched?
+  ✓ Location check: Unusual geography? (Russia?)
+  ✓ Behavior check: Accessing systems outside normal pattern?
+  ✓ Least privilege: Only specific DB access, not entire network
+  ✓ Session monitoring: Every action logged and analyzed
+  
+// RESULT: Attack stopped at multiple checkpoints
+// 9 days of recon? Impossible with real-time behavioral analytics
+</pre>
+</div>
+
+            <div class="warning-box" style="margin-top: 30px;">
+                <h3>The Google BeyondCorp Model</h3>
+                <p>After Aurora attacks (Chinese APT compromising Google in 2009), Google developed BeyondCorp—their zero trust implementation. No VPN. No network-based trust. Every request authenticated and authorized based on device and user context. This is the future of security.</p>
+            </div>
         </section>
 
-        <!-- Slide 13: Technical Controls -->
+<!-- Slide 16: Prevention Framework -->
+<section class="slide">
+    <span class="slide-number">16 / 20</span>
+    <h2>Prevention Framework: Defense in Depth</h2>
+    
+    <p style="text-align: center; font-size: 20px; margin: 20px 0 30px 0; line-height: 1.8; color: var(--text-primary);">
+        A comprehensive security strategy requires multiple layers of defense. Each level builds upon the foundation of strong authentication.
+    </p>
+    
+    <div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+        <svg width="100%" height="600" viewBox="0 0 1200 600" style="max-width: 100%;">
+            <defs>
+                <linearGradient id="grad-cyan" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:0.8" />
+                    <stop offset="100%" style="stop-color:#00f5ff;stop-opacity:0.3" />
+                </linearGradient>
+                <linearGradient id="grad-purple" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+                </linearGradient>
+                <linearGradient id="grad-red" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ff3366;stop-opacity:0.8" />
+                    <stop offset="100%" style="stop-color:#ff3366;stop-opacity:0.3" />
+                </linearGradient>
+                <linearGradient id="grad-green" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0.8" />
+                    <stop offset="100%" style="stop-color:#00ff88;stop-opacity:0.3" />
+                </linearGradient>
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            
+            <!-- Connection lines -->
+            <line x1="600" y1="50" x2="200" y2="550" stroke="#00f5ff" stroke-width="1" opacity="0.2" stroke-dasharray="10,5"/>
+            <line x1="600" y1="50" x2="1000" y2="550" stroke="#00f5ff" stroke-width="1" opacity="0.2" stroke-dasharray="10,5"/>
+            <line x1="200" y1="550" x2="1000" y2="550" stroke="#00ff88" stroke-width="1" opacity="0.2" stroke-dasharray="10,5"/>
+            
+            <!-- Layer 4 (Base) - MFA -->
+            <polygon points="600,50 1000,550 200,550" 
+                     fill="url(#grad-green)" 
+                     stroke="#00ff88" 
+                     stroke-width="5"
+                     filter="url(#glow)"/>
+            
+            <!-- Layer 3 - Network Segmentation -->
+            <polygon points="600,50 875,425 325,425" 
+                     fill="url(#grad-red)" 
+                     stroke="#ff3366" 
+                     stroke-width="5"
+                     filter="url(#glow)"/>
+            
+            <!-- Layer 2 - Monitoring -->
+            <polygon points="600,50 750,300 450,300" 
+                     fill="url(#grad-purple)" 
+                     stroke="#8b5cf6" 
+                     stroke-width="5"
+                     filter="url(#glow)"/>
+            
+            <!-- Layer 1 (Top) - Incident Response -->
+            <polygon points="600,50 700,175 500,175" 
+                     fill="url(#grad-cyan)" 
+                     stroke="#00f5ff" 
+                     stroke-width="5"
+                     filter="url(#glow)"/>
+            
+            <!-- Vertex markers -->
+            <circle cx="600" cy="50" r="15" fill="#00f5ff" stroke="#ffffff" stroke-width="3" filter="url(#glow)"/>
+            <circle cx="200" cy="550" r="15" fill="#00ff88" stroke="#ffffff" stroke-width="3" filter="url(#glow)"/>
+            <circle cx="1000" cy="550" r="15" fill="#00ff88" stroke="#ffffff" stroke-width="3" filter="url(#glow)"/>
+            
+            <!-- Layer 1 Label -->
+            <rect x="490" y="90" width="220" height="50" fill="rgba(10, 10, 15, 0.95)" stroke="#00f5ff" stroke-width="2" rx="5"/>
+            <text x="600" y="123" fill="#00f5ff" text-anchor="middle" font-size="20" font-family="JetBrains Mono" font-weight="bold">
+                INCIDENT RESPONSE
+            </text>
+            
+            <!-- Layer 2 Label -->
+            <rect x="460" y="215" width="280" height="50" fill="rgba(10, 10, 15, 0.95)" stroke="#8b5cf6" stroke-width="2" rx="5"/>
+            <text x="600" y="248" fill="#8b5cf6" text-anchor="middle" font-size="20" font-family="JetBrains Mono" font-weight="bold">
+                MONITORING & AUDITING
+            </text>
+            
+            <!-- Layer 3 Label -->
+            <rect x="450" y="340" width="300" height="50" fill="rgba(10, 10, 15, 0.95)" stroke="#ff3366" stroke-width="2" rx="5"/>
+            <text x="600" y="373" fill="#ff3366" text-anchor="middle" font-size="20" font-family="JetBrains Mono" font-weight="bold">
+                NETWORK SEGMENTATION
+            </text>
+            
+            <!-- Layer 4 Label (Foundation) -->
+            <rect x="400" y="470" width="400" height="60" fill="rgba(10, 10, 15, 0.95)" stroke="#00ff88" stroke-width="3" rx="5"/>
+            <text x="600" y="500" fill="#00ff88" text-anchor="middle" font-size="24" font-family="JetBrains Mono" font-weight="bold">
+                MULTI-FACTOR AUTHENTICATION
+            </text>
+            <text x="600" y="520" fill="#a0a0b0" text-anchor="middle" font-size="14" font-family="JetBrains Mono">
+                Foundation Layer
+            </text>
+        </svg>
+    </div>
+    
+    <div class="impact-list" style="margin-top: 30px;">
+        <div class="impact-item">
+            <strong>Layer 1 (Top):</strong> Incident Response — Defined procedures when defenses fail
+        </div>
+        <div class="impact-item">
+            <strong>Layer 2:</strong> Monitoring & Auditing — SIEM, behavioral analytics, real-time detection
+        </div>
+        <div class="impact-item">
+            <strong>Layer 3:</strong> Network Segmentation — Zero trust architecture, micro-perimeters
+        </div>
+        <div class="impact-item">
+            <strong>Layer 4 (Foundation):</strong> Multi-Factor Authentication — The control that would have prevented this breach
+        </div>
+    </div>
+</section>
+
+        <!-- Slide 17: Technical Controls -->
         <section class="slide">
-            <span class="slide-number">13 / 17</span>
+            <span class="slide-number">17 / 20</span>
             <h2>Recommendations: Healthcare Organizations</h2>
             
             <div class="recommendation-section">
@@ -1721,9 +2073,9 @@ CVE-2024-1708 (Path Traversal)
             </div>
         </section>
 
-        <!-- Slide 14: Individual Recommendations -->
+        <!-- Slide 18: Individual Recommendations -->
         <section class="slide">
-            <span class="slide-number">14 / 17</span>
+            <span class="slide-number">18 / 20</span>
             <h2>Recommendations: Patients & Individuals</h2>
             
             <div class="recommendation-section">
@@ -1763,9 +2115,9 @@ CVE-2024-1708 (Path Traversal)
             </div>
         </section>
 
-        <!-- Slide 15: Key Takeaways -->
+        <!-- Slide 19: Key Takeaways -->
         <section class="slide">
-            <span class="slide-number">15 / 17</span>
+            <span class="slide-number">19 / 20</span>
             <h2>Key Takeaways</h2>
             
             <div class="takeaway-grid">
@@ -1780,30 +2132,30 @@ CVE-2024-1708 (Path Traversal)
                 </div>
 
                 <div class="takeaway-card">
-                    <h3 style="color: var(--accent-purple); margin-bottom: 20px;">9 Days Undetected</h3>
-                    <p>Attackers had free reign for over a week due to poor threat detection and network segmentation. Modern monitoring tools should catch this.</p>
+                    <h3 style="color: var(--accent-purple); margin-bottom: 20px;">APT-Level Tradecraft</h3>
+                    <p>ALPHV/BlackCat used sophisticated nation-state-level techniques. The attack shares tactical DNA with Stuxnet, NotPetya, and SolarWinds operations.</p>
                 </div>
 
                 <div class="takeaway-card">
                     <h3 style="color: var(--accent-red); margin-bottom: 20px;">Paying Ransoms Doesn't Work</h3>
-                    <p>UnitedHealth paid $22 million and the data was released anyway. Ransom payments fund future attacks and provide no guarantee.</p>
+                    <p>UnitedHealth paid $22 million and the data was released anyway. The exit scam demonstrates why ransom payments fund future attacks.</p>
                 </div>
 
                 <div class="takeaway-card">
-                    <h3 style="color: var(--accent-cyan); margin-bottom: 20px;">Legacy Systems Kill</h3>
-                    <p>40-year-old software. Windows XP in hospitals. FDA recertification costs prevent updates. This creates systemic vulnerability.</p>
+                    <h3 style="color: var(--accent-cyan); margin-bottom: 20px;">Snowden's Warning Echoes</h3>
+                    <p>When intelligence agencies hoard vulnerabilities or corporations skip basic controls, civilians pay the price. EternalBlue → WannaCry → NHS paralysis.</p>
                 </div>
 
                 <div class="takeaway-card">
-                    <h3 style="color: var(--accent-purple); margin-bottom: 20px;">Human Cost is Real</h3>
-                    <p>Ransomware attacks on hospitals correlate with increased mortality rates. This isn't just about data: it's about human lives.</p>
+                    <h3 style="color: var(--accent-purple); margin-bottom: 20px;">Zero Trust is Essential</h3>
+                    <p>The castle-and-moat security model failed. Zero trust architecture with continuous verification would have blocked lateral movement.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 16: Final Message -->
+        <!-- Slide 20: Final Message & References -->
         <section class="slide final-slide">
-            <span class="slide-number">16 / 17</span>
+            <span class="slide-number">20 / 20</span>
             <h2>The Stakes Are Life and Death</h2>
             
             <div class="warning-box" style="margin: 40px 0;">
@@ -1842,61 +2194,21 @@ CVE-2024-1708 (Path Traversal)
                     <span style="color: var(--accent-red);">We're not just protecting money. We're protecting lives. As someone studying cybersecurity, this breach shows why our work matters.</span>
                 </p>
             </div>
-        </section>
 
-        <!-- Slide 17: References -->
-        <section class="slide">
-            <span class="slide-number">17 / 17</span>
-            <h2>References & Resources</h2>
-            
             <div class="references">
-                <h4>Primary Sources</h4>
+                <h4>Primary Sources & Technical Analysis</h4>
                 <ul>
                     <li>UnitedHealth Group Congressional Testimony - Andrew Witty, CEO (May 1, 2024)</li>
-                    <li>UnitedHealth Group Official Statements and SEC Filings (2024)</li>
-                    <li>UnitedHealth Q3 2024 Financial Statements ($2.457B cost estimate)</li>
                     <li>CISA Advisory: Change Healthcare Cyber Incident</li>
                     <li>CVE-2024-1709: ConnectWise ScreenConnect Authentication Bypass (CVSS 10.0)</li>
-                    <li>CVE-2024-1708: ConnectWise ScreenConnect Path Traversal Vulnerability</li>
-                </ul>
-            </div>
-
-            <div class="references">
-                <h4>Healthcare Cybersecurity Reports</h4>
-                <ul>
                     <li>Department of Health and Human Services - Office for Civil Rights Breach Portal</li>
-                    <li>HIPAA Journal: Annual Healthcare Data Breach Report (2024)</li>
-                    <li>Ponemon Institute: Cost of Healthcare Data Breaches</li>
-                    <li>FDA Guidelines on Medical Device Cybersecurity</li>
-                    <li>American Hospital Association: Healthcare Cybersecurity Statistics</li>
-                </ul>
-            </div>
-
-            <div class="references">
-                <h4>Technical Analysis</h4>
-                <ul>
-                    <li>ALPHV/BlackCat Ransomware Group: Threat Analysis by CrowdStrike and Mandiant</li>
-                    <li>RansomHub Ransomware Group: Second Extortion Attempt</li>
-                    <li>Citrix Remote Access Security Best Practices</li>
-                    <li>NIST Cybersecurity Framework for Healthcare</li>
+                    <li>ALPHV/BlackCat & RansomHub Ransomware: Threat Analysis by CrowdStrike and Mandiant</li>
                     <li>MITRE ATT&CK Framework: Healthcare Sector Tactics</li>
-                </ul>
-            </div>
-
-            <div class="references">
-                <h4>Research Papers & Case Studies</h4>
-                <ul>
+                    <li>NIST SP 800-207: Zero Trust Architecture</li>
                     <li>Radcliffe, Jerome (2011). "Hacking Medical Devices for Fun and Insulin" - Black Hat Conference</li>
-                    <li>Kamiya, S. et al. (2021). "Ransomware Attacks and Patient Mortality"</li>
-                    <li>Healthcare Information Management Systems Society (HIMSS) Security Surveys</li>
-                    <li>ConnectWise Security Advisory: CVE-2024-1709 and CVE-2024-1708</li>
+                    <li>NotPetya, WannaCry, SolarWinds, Stuxnet: Comparative Analysis</li>
+                    <li>Snowden Revelations: NSA EternalBlue → WannaCry Connection</li>
                 </ul>
-            </div>
-
-            <div style="margin-top: 40px; text-align: center; padding: 30px; background: rgba(0, 245, 255, 0.05); border: 1px solid var(--accent-cyan);">
-                <p style="font-size: 18px; color: var(--text-secondary);">
-                    For the most current information on healthcare cybersecurity threats and best practices, consult the CISA Healthcare and Public Health Sector page and your organization's security team.
-                </p>
             </div>
         </section>
 
@@ -1923,12 +2235,10 @@ CVE-2024-1708 (Path Traversal)
         function updateSlideCounter() {
             document.getElementById('currentSlide').textContent = String(currentSlideIndex + 1).padStart(2, '0');
             
-            // Update button states
             document.getElementById('prevBtn').disabled = currentSlideIndex === 0;
             document.getElementById('nextBtn').disabled = currentSlideIndex === totalSlides - 1;
         }
 
-        // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
                 navigateSlide(-1);
@@ -1938,7 +2248,6 @@ CVE-2024-1708 (Path Traversal)
             }
         });
 
-        // Track which slide is currently in view
         const observerOptions = {
             threshold: 0.5,
             rootMargin: '-100px 0px -100px 0px'
@@ -1960,7 +2269,6 @@ CVE-2024-1708 (Path Traversal)
             slideObserver.observe(slide);
         });
 
-        // Scroll progress indicator
         window.addEventListener('scroll', () => {
             const scrollProgress = document.getElementById('scrollProgress');
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -1969,12 +2277,10 @@ CVE-2024-1708 (Path Traversal)
             scrollProgress.style.width = scrollPercent + '%';
         });
 
-        // Initialize
         updateSlideCounter();
 
-        // Console easter egg
-        console.log('%c🔒 Change Healthcare Presentation', 'color: #00f5ff; font-size: 20px; font-weight: bold;');
-        console.log('%c192.7 million Americans affected. $2.457 billion cost. All preventable with MFA.', 'color: #ff0844; font-size: 14px;');
+        console.log('%c🔒 Change Healthcare Elite Analysis', 'color: #00f5ff; font-size: 20px; font-weight: bold;');
+        console.log('%cAPT-Level Threat Intelligence | Snowden Context | Zero Trust Architecture', 'color: #ff0844; font-size: 14px;');
         console.log('%c→ Use arrow keys or space to navigate', 'color: #b84cff; font-size: 12px;');
     </script>
 </body>
